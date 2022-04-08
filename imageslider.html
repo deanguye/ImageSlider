@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>  
+<body>
+<h1>Image Slider</h1>
+<h3>Author: Deanna Nguyen</h3>
+
+<script type = "text/javascript">
+  //https://www.geeksforgeeks.org/how-to-expand-in-and-expand-out-image-using-javascript/
+  //https://stackoverflow.com/questions/47635341/zooming-in-out-an-image-by-clicking-expand-buttons-javascript
+    
+  function expand(images) {
+    var imgr = document.getElementByID("expandedImage");
+    var width = imgr.clientWidth;
+    imgr.parentElement.style.display = "block";
+  }
+  
+</script>
+
+
+<!--https://www.w3schools.com/howto/howto_js_lightbox.asp-->
+<!--https://placeholder.com/#How_To_Use_Our_Placeholders-->
+<!--https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp-->
+<div class="column">
+  <img src="https://via.placeholder.com/150" onclick="expand(this);">
+</div>
+
+<div class="column">
+  <img src="https://via.placeholder.com/100 "onclick="expand(this);">
+</div>
+
+<div class="column">
+  <img src="https://via.placeholder.com/200" onclick="expand(this);">
+</div>
+
+<div class="column">
+  <img src="https://via.placeholder.com/250" onclick="expand(this);">
+</div>
+
+<div class="column">
+  <img src="https://via.placeholder.com/300" onclick="expand(this);">
+</div>
+
+<!--Used for expansion-->
+<div class = "container">
+  <img id="expandedImage" style="width:100%">
+
+  <div id="imgtext"></div>
+</div>
+
+
+</body>
+
+
+</html>
+
+
